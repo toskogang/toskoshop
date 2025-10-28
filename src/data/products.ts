@@ -182,7 +182,7 @@ export const products: Product[] = [
     name: 'Vírusirtó Karbantartási Csomag',
     price: 85000,
     description: 'Teljes körű vírusirtó szolgáltatás éves karbantartással. Automatikus frissítések, valós idejű védelem és havi jelentések.',
-    category: 'Kiberbiztonság',
+    category: 'Szolgáltatások',
     image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400',
     images: [
       'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800',
@@ -195,7 +195,7 @@ export const products: Product[] = [
     name: 'Rendszer Karbantartási Szerződés',
     price: 150000,
     description: 'Havi rendszeres karbantartás és felügyelet. Biztonsági frissítések, teljesítmény optimalizálás és 24/7 támogatás.',
-    category: 'Kiberbiztonság',
+    category: 'Szolgáltatások',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400',
     images: [
       'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
@@ -221,7 +221,7 @@ export const products: Product[] = [
     name: 'Biztonsági Audit Szolgáltatás',
     price: 180000,
     description: 'Átfogó biztonsági audit penetrációs tesztekkel. Sebezhetőség elemzés, kockázatértékelés és részletes jelentés.',
-    category: 'Kiberbiztonság',
+    category: 'Szolgáltatások',
     image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400',
     images: [
       'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800',
@@ -234,7 +234,7 @@ export const products: Product[] = [
     name: 'Adatvédelmi Compliance Csomag',
     price: 220000,
     description: 'GDPR megfelelőségi csomag auditálással és dokumentációval. Adatvédelmi tanácsadás, képzés és folyamatos felügyelet.',
-    category: 'Kiberbiztonság',
+    category: 'Szolgáltatások',
     image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400',
     images: [
       'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800',

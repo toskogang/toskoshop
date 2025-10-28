@@ -49,6 +49,12 @@ const Navbar = () => {
               >
                 Kapcsolat
               </Link>
+              <Link
+                to="/reviews"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              >
+                Vélemények
+              </Link>
             </div>
           </div>
 

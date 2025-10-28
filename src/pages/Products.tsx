@@ -28,6 +28,7 @@ const Products = () => {
             <TabsTrigger value="Összes">Összes</TabsTrigger>
             <TabsTrigger value="Hálózatépítés">Hálózatépítés</TabsTrigger>
             <TabsTrigger value="Kiberbiztonság">Kiberbiztonság</TabsTrigger>
+            <TabsTrigger value="Szolgáltatások">Szolgáltatások</TabsTrigger>
           </TabsList>
         </Tabs>
 
