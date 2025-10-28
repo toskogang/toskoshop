@@ -145,6 +145,14 @@ const Reviews = () => {
       toast.error('Kérjük, adja meg a nevét!');
       return;
     }
+
+    const blockedNames = ['lakatos', 'arató', 'dzsesszika', 'jessica', 'rodolfó', 'bodega', 'konrád'];
+    const nameLower = newReview.name.toLowerCase();
+    
+    if (blockedNames.some(blocked => nameLower.includes(blocked))) {
+      toast.error('Ez a név nem engedélyezett a véleményezéshez.');
+      return;
+    }
     
     if (newReview.rating < 4) {
       toast.error('Csak 4 vagy 5 csillagos értékeléseket fogadunk el!');
