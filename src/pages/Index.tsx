@@ -5,8 +5,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-16">
         <section className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            Üdvözöljük a TechShop-ban
+          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            Üdvözöljük a ToskoShop-ban
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Professzionális hálózati megoldások és kiberbiztonság egy helyen. 

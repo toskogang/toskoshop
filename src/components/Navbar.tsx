@@ -18,7 +18,9 @@ const Navbar = () => {
               aria-label="Vissza a főoldalra"
             >
               <Home className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl">TechShop</span>
+              <span className="font-bold text-xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                ToskoShop
+              </span>
             </button>
             
             <div className="hidden md:flex items-center gap-6">
