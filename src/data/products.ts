@@ -1,0 +1,86 @@
+import { Product } from '@/contexts/CartContext';
+
+export const products: Product[] = [
+  // Hálózatépítés termékek
+  {
+    id: 1,
+    name: 'CAT6 UTP Kábel - 305m',
+    price: 45000,
+    description: 'Kiváló minőségű CAT6 UTP hálózati kábel, 305 méteres dobozban. Ideális irodai és otthoni hálózatok kiépítéséhez.',
+    category: 'Hálózatépítés',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 2,
+    name: 'Gigabit Router TP-Link',
+    price: 28000,
+    description: 'Professzionális 5-portos Gigabit router, dual-band Wi-Fi támogatással. Akár 1200 Mbps sebesség.',
+    category: 'Hálózatépítés',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 3,
+    name: 'Fiber Optikai Kábel 50m',
+    price: 65000,
+    description: 'Nagy sebességű fiber optikai kábel, 50 méter hosszúságban. Tökéletes adatközpontok közötti kapcsolathoz.',
+    category: 'Hálózatépítés',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 4,
+    name: 'PoE Switch 24-port',
+    price: 120000,
+    description: '24-portos Power over Ethernet switch, Gigabit sebességgel. Ideális IP kamerák és telefonok táplálásához.',
+    category: 'Hálózatépítés',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 5,
+    name: 'Hálózati Patch Panel 48-port',
+    price: 35000,
+    description: '48-portos patch panel, CAT6 kompatibilis. Könnyű szerelés és professzionális megjelenés.',
+    category: 'Hálózatépítés',
+    image: '/placeholder.svg',
+  },
+  // Kiberbiztonság termékek
+  {
+    id: 6,
+    name: 'Enterprise Firewall',
+    price: 250000,
+    description: 'Vállalati szintű tűzfal berendezés, DPI és IPS funkciókkal. Védje hálózatát a modern fenyegetésektől.',
+    category: 'Kiberbiztonság',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 7,
+    name: 'VPN Router Cisco',
+    price: 180000,
+    description: 'Biztonságos VPN kapcsolatok kialakítása távoli irodák között. IPsec és SSL VPN támogatás.',
+    category: 'Kiberbiztonság',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 8,
+    name: 'Biztonsági Kamera Rendszer',
+    price: 95000,
+    description: '8 kamerás IP megfigyelőrendszer, éjjellátó funkcióval és mozgásérzékeléssel. Cloud tárolás opció.',
+    category: 'Kiberbiztonság',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 9,
+    name: 'Behatolásjelző Rendszer',
+    price: 320000,
+    description: 'IDS/IPS rendszer valós idejű hálózati forgalom elemzéssel. Automatikus veszélyforrás blokkolás.',
+    category: 'Kiberbiztonság',
+    image: '/placeholder.svg',
+  },
+  {
+    id: 10,
+    name: 'Hálózati Titkosító Eszköz',
+    price: 210000,
+    description: 'Hardware alapú hálózati titkosító modul. AES-256 titkosítás, törvényi megfelelőség támogatással.',
+    category: 'Kiberbiztonság',
+    image: '/placeholder.svg',
+  },
+];
