@@ -4,19 +4,10 @@ import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
-import { useEffect, useState } from "react";
 
 const Index = () => {
   const { addToCart } = useCart();
   const featuredProducts = products.slice(0, 6);
-  const [ipAddress, setIpAddress] = useState<string>("Betöltés...");
-
-  useEffect(() => {
-    fetch("https://api.ipify.org?format=json")
-      .then(response => response.json())
-      .then(data => setIpAddress(data.ip))
-      .catch(() => setIpAddress("Nem sikerült betölteni"));
-  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -25,12 +16,6 @@ const Index = () => {
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
         <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="text-center animate-fade-in">
-            <div className="mb-8 p-8 rounded-2xl bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 border-2 border-primary/30 inline-block">
-              <p className="text-sm text-muted-foreground mb-2">Az Ön IP címe:</p>
-              <p className="text-4xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-                {ipAddress}
-              </p>
-            </div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-scale-in">
               ToskoShop
             </h1>

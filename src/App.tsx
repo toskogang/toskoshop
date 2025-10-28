@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import Reviews from "./pages/Reviews";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
+import WhyChooseUs from "./pages/WhyChooseUs";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
                   <Route path="/products" element={<Products />} />
                   <Route path="/products/:id" element={<ProductDetail />} />
                   <Route path="/about" element={<About />} />
+                  <Route path="/why-choose-us" element={<WhyChooseUs />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/reviews" element={<Reviews />} />
                   <Route path="/privacy" element={<Privacy />} />

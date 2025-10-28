@@ -47,6 +47,12 @@ const Navbar = () => {
                 Rólunk
               </Link>
               <Link
+                to="/why-choose-us"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              >
+                Miért mi?
+              </Link>
+              <Link
                 to="/contact"
                 className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
               >
@@ -111,6 +117,13 @@ const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Rólunk
+              </Link>
+              <Link
+                to="/why-choose-us"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Miért mi?
               </Link>
               <Link
                 to="/contact"
