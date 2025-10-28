@@ -50,9 +50,20 @@ const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
         </CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
-        <p className="text-2xl font-bold text-primary">
-          {product.price.toLocaleString('hu-HU')} Ft
-        </p>
+        {product.requiresSurvey ? (
+          <div className="space-y-1">
+            <p className="text-sm font-semibold text-foreground">
+              Hálózati felmérés szükséges
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Egyedi árajánlat
+            </p>
+          </div>
+        ) : (
+          <p className="text-2xl font-bold text-primary">
+            {product.price.toLocaleString('hu-HU')} Ft
+          </p>
+        )}
       </CardContent>
       <CardFooter className="flex gap-2">
         <Button

@@ -82,9 +82,23 @@ const ProductDetail = () => {
             <div>
               <Badge className="mb-4">{product.category}</Badge>
               <h1 className="text-4xl font-bold mb-4">{product.name}</h1>
-              <p className="text-3xl font-bold text-primary mb-6">
-                {product.price.toLocaleString('hu-HU')} Ft
-              </p>
+              {product.requiresSurvey ? (
+                <div className="bg-muted p-4 rounded-lg mb-6">
+                  <p className="text-lg font-semibold text-foreground mb-2">
+                    Hálózati felmérés szükséges
+                  </p>
+                  <p className="text-2xl font-bold text-primary">
+                    Felmérés díja: 40.000 Ft
+                  </p>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    A végső ár a helyszíni felmérés alapján kerül meghatározásra
+                  </p>
+                </div>
+              ) : (
+                <p className="text-3xl font-bold text-primary mb-6">
+                  {product.price.toLocaleString('hu-HU')} Ft
+                </p>
+              )}
             </div>
 
             <Card>

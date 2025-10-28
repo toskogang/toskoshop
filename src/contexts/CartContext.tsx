@@ -9,6 +9,7 @@ export interface Product {
   image: string;
   images?: string[];
   specifications?: string[];
+  requiresSurvey?: boolean;
 }
 
 interface CartItem extends Product {
