@@ -1,6 +1,8 @@
 import { Product } from '@/contexts/CartContext';
 
 // Import images
+import cat6Utp from '@/assets/cat6-utp.webp';
+import cat6Utp2 from '@/assets/cat6-utp-2.webp';
 import fiberOptic1 from '@/assets/fiber-optic-1.jpg';
 import fiberOptic2 from '@/assets/fiber-optic-2.png';
 import ciscoVpnRouter from '@/assets/cisco-vpn-router.webp';
@@ -30,11 +32,10 @@ export const products: Product[] = [
     price: 45000,
     description: 'Kiváló minőségű CAT6 UTP hálózati kábel, 305 méteres dobozban. Ideális irodai és otthoni hálózatok kiépítéséhez. Digitus Cat6 U/UTP patch kábel egyenes kötésű és cross-over változatban.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
+    image: cat6Utp,
     images: [
-      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
-      'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
-      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
+      cat6Utp,
+      cat6Utp2,
     ],
     specifications: [
       'Kategória: Cat6',
