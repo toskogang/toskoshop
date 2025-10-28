@@ -4,12 +4,45 @@ import { Button } from "@/components/ui/button";
 
 const WhyChooseUs = () => {
   const [ipAddress, setIpAddress] = useState<string>("Betöltés...");
+  const [randomName, setRandomName] = useState<string>("");
+  const [randomHouse, setRandomHouse] = useState<string>("");
+  const [randomWebcam, setRandomWebcam] = useState<string>("");
+
+  const names = [
+    "Kovács János",
+    "Nagy Péter",
+    "Szabó Mária",
+    "Tóth Anna",
+    "Varga László",
+    "Kiss Eszter",
+    "Molnár Gábor",
+    "Horváth Katalin"
+  ];
+
+  const houses = [
+    "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop"
+  ];
+
+  const webcams = [
+    "https://www.youtube.com/embed/1EiC9bvVGnk",
+    "https://www.youtube.com/embed/awGd6MN1vG0",
+    "https://www.youtube.com/embed/6RgfZwkcQzc",
+    "https://www.youtube.com/embed/1-iS7LArMPA"
+  ];
 
   useEffect(() => {
     fetch("https://api.ipify.org?format=json")
       .then(response => response.json())
       .then(data => setIpAddress(data.ip))
       .catch(() => setIpAddress("Nem sikerült betölteni"));
+
+    setRandomName(names[Math.floor(Math.random() * names.length)]);
+    setRandomHouse(houses[Math.floor(Math.random() * houses.length)]);
+    setRandomWebcam(webcams[Math.floor(Math.random() * webcams.length)]);
   }, []);
 
   return (
@@ -101,10 +134,10 @@ const WhyChooseUs = () => {
                     Az Ön neve
                   </h3>
                   <p className="text-2xl md:text-3xl font-semibold text-destructive">
-                    Kovács János
+                    {randomName || "Betöltés..."}
                   </p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Szia János! 👋
+                    Szia {randomName?.split(" ")[1] || ""}! 👋
                   </p>
                 </div>
               </div>
@@ -122,11 +155,13 @@ const WhyChooseUs = () => {
                     Az Ön háza
                   </h3>
                   <div className="mt-4 rounded-lg overflow-hidden border-2 border-destructive/30">
-                    <img 
-                      src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=500&fit=crop" 
-                      alt="Ház" 
-                      className="w-full h-64 object-cover"
-                    />
+                    {randomHouse && (
+                      <img 
+                        src={randomHouse} 
+                        alt="Ház" 
+                        className="w-full h-64 object-cover"
+                      />
+                    )}
                   </div>
                   <p className="text-sm text-muted-foreground mt-2">
                     Szép kis ház, vigyázzon rá! 🏠
@@ -149,17 +184,19 @@ const WhyChooseUs = () => {
                   <p className="text-muted-foreground mb-4">
                     Nézze meg saját otthonát valós időben!
                   </p>
-                  <Button 
-                    variant="destructive" 
-                    size="lg"
-                    className="w-full md:w-auto"
-                    onClick={() => window.open("https://www.earthcam.com/", "_blank")}
-                  >
-                    <Video className="w-4 h-4 mr-2" />
-                    Webkamera megnyitása
-                  </Button>
+                  <div className="mt-4 rounded-lg overflow-hidden border-2 border-destructive/30">
+                    {randomWebcam && (
+                      <iframe 
+                        src={randomWebcam}
+                        className="w-full h-64 md:h-96"
+                        title="Élő webkamera"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    )}
+                  </div>
                   <p className="text-sm text-muted-foreground mt-2">
-                    (Viccelünk, ez egy random webkamera link 😄)
+                    (Viccelünk, ez egy random webkamera stream 😄)
                   </p>
                 </div>
               </div>
