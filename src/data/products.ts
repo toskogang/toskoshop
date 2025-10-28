@@ -8,11 +8,11 @@ export const products: Product[] = [
     price: 45000,
     description: 'Kiváló minőségű CAT6 UTP hálózati kábel, 305 méteres dobozban. Ideális irodai és otthoni hálózatok kiépítéséhez.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1558089687-7b4c1e4c6bb9?w=400',
+    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
     images: [
-      'https://images.unsplash.com/photo-1558089687-7b4c1e4c6bb9?w=800',
-      'https://images.unsplash.com/photo-1615799998603-7c6270a45196?w=800',
-      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800',
+      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
+      'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
+      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
     ],
   },
   {
@@ -24,8 +24,8 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
     images: [
       'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
-      'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800',
       'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
+      'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800',
     ],
   },
   {
@@ -34,11 +34,11 @@ export const products: Product[] = [
     price: 65000,
     description: 'Nagy sebességű fiber optikai kábel, 50 méter hosszúságban. Tökéletes adatközpontok közötti kapcsolathoz.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400',
+    image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=400',
     images: [
-      'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=800',
       'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800',
       'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800',
+      'https://images.unsplash.com/photo-1488229297570-58520851e868?w=800',
     ],
   },
   {
@@ -60,11 +60,11 @@ export const products: Product[] = [
     price: 35000,
     description: '48-portos patch panel, CAT6 kompatibilis. Könnyű szerelés és professzionális megjelenés.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=400',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400',
     images: [
-      'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800',
-      'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
       'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
+      'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
+      'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
     ],
   },
   // Kiberbiztonság termékek
@@ -74,10 +74,10 @@ export const products: Product[] = [
     price: 250000,
     description: 'Vállalati szintű tűzfal berendezés, DPI és IPS funkciókkal. Védje hálózatát a modern fenyegetésektől.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400',
     images: [
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
       'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
-      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800',
       'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
     ],
   },
@@ -87,11 +87,11 @@ export const products: Product[] = [
     price: 180000,
     description: 'Biztonságos VPN kapcsolatok kialakítása távoli irodák között. IPsec és SSL VPN támogatás.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400',
+    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
     images: [
-      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800',
       'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
-      'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800',
+      'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
+      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
     ],
   },
   {
@@ -113,10 +113,10 @@ export const products: Product[] = [
     price: 320000,
     description: 'IDS/IPS rendszer valós idejű hálózati forgalom elemzéssel. Automatikus veszélyforrás blokkolás.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400',
+    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400',
     images: [
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
+      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
+      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
       'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
     ],
   },
@@ -129,8 +129,8 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400',
     images: [
       'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800',
-      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
       'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
     ],
   },
   {
@@ -139,11 +139,11 @@ export const products: Product[] = [
     price: 85000,
     description: 'Teljes körű vírusirtó szolgáltatás éves karbantartással. Automatikus frissítések, valós idejű védelem és havi jelentések.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400',
+    image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400',
     images: [
-      'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800',
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
+      'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800',
       'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
+      'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
     ],
   },
   {
@@ -152,11 +152,11 @@ export const products: Product[] = [
     price: 150000,
     description: 'Havi rendszeres karbantartás és felügyelet. Biztonsági frissítések, teljesítmény optimalizálás és 24/7 támogatás.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=400',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400',
     images: [
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
       'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800',
       'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800',
-      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800',
     ],
   },
   {
@@ -168,7 +168,7 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=400',
     images: [
       'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
+      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
       'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
     ],
   },
@@ -182,7 +182,7 @@ export const products: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800',
       'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',
-      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
+      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
     ],
   },
   {
