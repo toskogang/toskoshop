@@ -35,15 +35,15 @@ const Cart = () => {
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8">Kosár</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-8">Kosár</h1>
 
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-4">
             {cart.map((item) => (
               <Card key={item.id}>
-                <CardContent className="p-6">
-                  <div className="flex gap-4">
-                    <div className="w-24 h-24 bg-muted rounded-md flex-shrink-0">
+                <CardContent className="p-4 md:p-6">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="w-full sm:w-24 h-32 sm:h-24 bg-muted rounded-md flex-shrink-0">
                       <img
                         src={item.image}
                         alt={item.name}
@@ -61,7 +61,7 @@ const Cart = () => {
                       </p>
                     </div>
 
-                    <div className="flex flex-col items-end justify-between">
+                    <div className="flex sm:flex-col items-center sm:items-end justify-between sm:justify-between">
                       <Button
                         variant="ghost"
                         size="sm"
@@ -97,7 +97,7 @@ const Cart = () => {
           </div>
 
           <div className="lg:col-span-1">
-            <Card className="sticky top-20">
+            <Card className="lg:sticky lg:top-20">
               <CardHeader>
                 <CardTitle>Összesítés</CardTitle>
               </CardHeader>

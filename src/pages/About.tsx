@@ -5,8 +5,8 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12">
         <div className="mb-8">
-          <img src={toskogangLogo} alt="Toskogang" className="h-20 mb-4" />
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+          <img src={toskogangLogo} alt="Toskogang" className="h-16 md:h-20 mb-4" />
+          <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             Rólunk - Toskogang
           </h1>
         </div>

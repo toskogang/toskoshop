@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="border-t bg-muted/30 mt-auto">
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Cég információk */}
           <div>
             <h3 className="font-bold text-lg mb-4">ToskoShop</h3>
@@ -79,14 +79,14 @@ const Footer = () => {
         <div className="border-t mt-8 pt-6">
           <div className="text-sm text-muted-foreground space-y-2">
             <h4 className="font-semibold text-foreground mb-3">Impresszum</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="space-y-1">
                 <p><strong>Cégnév:</strong> ToskoShop Kft.</p>
                 <p><strong>Székhely:</strong> 1234 Budapest, Példa utca 12.</p>
                 <p><strong>Adószám:</strong> 12345678-2-42</p>
                 <p><strong>Cégjegyzékszám:</strong> 01-09-123456</p>
               </div>
-              <div>
+              <div className="space-y-1">
                 <p><strong>Email:</strong> info@toskoshop.hu</p>
                 <p><strong>Telefon:</strong> +36 1 234 5678</p>
                 <p><strong>Nyitvatartás:</strong> Hétfő-Péntek 8:00-17:00</p>

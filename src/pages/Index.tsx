@@ -5,18 +5,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-16">
         <section className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             Üdvözöljük a ToskoShop-ban
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Professzionális hálózati megoldások és kiberbiztonság egy helyen. 
             Találja meg a legmodernebb eszközöket vállalkozása számára.
           </p>
         </section>
 
-        <section className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="p-8 border rounded-lg hover:shadow-lg transition-shadow">
-            <h2 className="text-2xl font-bold mb-4">Hálózatépítés</h2>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="p-6 md:p-8 border rounded-lg hover:shadow-lg transition-shadow">
+            <h2 className="text-xl md:text-2xl font-bold mb-4">Hálózatépítés</h2>
             <p className="text-muted-foreground mb-4">
               Kiváló minőségű kábelek, routerek és switchek professzionális 
               hálózatok kiépítéséhez. Megbízható kapcsolat minden környezetben.
@@ -26,8 +26,8 @@ const Index = () => {
             </a>
           </div>
           
-          <div className="p-8 border rounded-lg hover:shadow-lg transition-shadow">
-            <h2 className="text-2xl font-bold mb-4">Kiberbiztonság</h2>
+          <div className="p-6 md:p-8 border rounded-lg hover:shadow-lg transition-shadow">
+            <h2 className="text-xl md:text-2xl font-bold mb-4">Kiberbiztonság</h2>
             <p className="text-muted-foreground mb-4">
               Védje meg vállalkozását a modern kiberfenyegetésektől. Tűzfalak, 
               VPN megoldások és behatolásjelző rendszerek.
@@ -38,9 +38,9 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="text-center bg-muted p-12 rounded-lg">
-          <h2 className="text-3xl font-bold mb-4">Miért válasszon minket?</h2>
-          <div className="grid md:grid-cols-3 gap-6 mt-8">
+        <section className="text-center bg-muted p-8 md:p-12 rounded-lg">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Miért válasszon minket?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
             <div>
               <h3 className="font-semibold mb-2">Szakértelem</h3>
               <p className="text-sm text-muted-foreground">

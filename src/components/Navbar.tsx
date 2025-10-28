@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/contexts/CartContext';
 import { ThemeToggle } from '@/components/ThemeToggle';
@@ -8,6 +9,7 @@ import toskogangIcon from '@/assets/toskogang-icon.png';
 const Navbar = () => {
   const navigate = useNavigate();
   const { getTotalItems } = useCart();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
@@ -74,8 +76,59 @@ const Navbar = () => {
                 </span>
               )}
             </Button>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="md:hidden"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t py-4 bg-background">
+            <div className="flex flex-col gap-4">
+              <Link
+                to="/"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Főoldal
+              </Link>
+              <Link
+                to="/products"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Termékek
+              </Link>
+              <Link
+                to="/about"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Rólunk
+              </Link>
+              <Link
+                to="/contact"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Kapcsolat
+              </Link>
+              <Link
+                to="/reviews"
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Vélemények
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );

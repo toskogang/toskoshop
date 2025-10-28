@@ -51,7 +51,7 @@ const ProductDetail = () => {
           {/* Image Gallery */}
           <div className="space-y-4">
             <Card>
-              <CardContent className="p-6">
+              <CardContent className="p-4 md:p-6">
                 <Carousel className="w-full">
                   <CarouselContent>
                     {displayImages.map((image, index) => (
@@ -102,8 +102,8 @@ const ProductDetail = () => {
             </div>
 
             <Card>
-              <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4">Termékleírás</h2>
+              <CardContent className="p-4 md:p-6">
+                <h2 className="text-lg md:text-xl font-semibold mb-4">Termékleírás</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   {product.description}
                 </p>
@@ -112,8 +112,8 @@ const ProductDetail = () => {
 
             {product.specifications && (
               <Card>
-                <CardContent className="p-6">
-                  <h2 className="text-xl font-semibold mb-4">Főbb jellemzők</h2>
+                <CardContent className="p-4 md:p-6">
+                  <h2 className="text-lg md:text-xl font-semibold mb-4">Főbb jellemzők</h2>
                   <ul className="space-y-2">
                     {product.specifications.map((spec, index) => (
                       <li key={index} className="flex items-start">
