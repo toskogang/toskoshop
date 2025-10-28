@@ -1,8 +1,9 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingCart, Home } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/contexts/CartContext';
 import { ThemeToggle } from '@/components/ThemeToggle';
+import toskogangIcon from '@/assets/toskogang-icon.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const Navbar = () => {
               className="flex items-center gap-2 hover:opacity-80 transition-opacity"
               aria-label="Vissza a főoldalra"
             >
-              <Home className="h-6 w-6 text-primary" />
+              <img src={toskogangIcon} alt="Toskogang" className="h-8 w-8" />
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 ToskoShop
               </span>
