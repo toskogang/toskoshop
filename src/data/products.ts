@@ -23,6 +23,8 @@ import securityCam from '@/assets/security-cam.jpg';
 import securityCam2 from '@/assets/security-cam-2.jpg';
 import networkEncryption from '@/assets/network-encryption.png';
 import securityAudit from '@/assets/security-audit.jpg';
+import firewall from '@/assets/firewall.jpg';
+import cyberAttack from '@/assets/cyber-attack.webp';
 
 export const products: Product[] = [
   // Hálózatépítés termékek
@@ -137,11 +139,9 @@ export const products: Product[] = [
     price: 250000,
     description: 'Vállalati szintű tűzfal berendezés, DPI és IPS funkciókkal. Védje hálózatát a modern fenyegetésektől.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400',
+    image: firewall,
     images: [
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
-      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
-      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
+      firewall,
     ],
   },
   {
@@ -174,11 +174,9 @@ export const products: Product[] = [
     price: 320000,
     description: 'IDS/IPS rendszer valós idejű hálózati forgalom elemzéssel. Automatikus veszélyforrás blokkolás.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400',
+    image: cyberAttack,
     images: [
-      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
-      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
-      'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
+      cyberAttack,
     ],
   },
   {
