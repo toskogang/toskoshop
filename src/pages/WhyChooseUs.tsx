@@ -21,14 +21,14 @@ const WhyChooseUs = () => {
   ];
 
   const addresses = [
-    "1052 Budapest, Petőfi Sándor utca 12.",
-    "6720 Szeged, Kossuth Lajos sugárút 45.",
-    "4032 Debrecen, Nagy Lajos király tér 8.",
-    "9021 Győr, Arany János utca 23.",
+    "1052 Budapest, Petőfi Sándor utca 67.",
+    "6720 Szeged, Kossuth Lajos sugárút 67.",
+    "4032 Debrecen, Nagy Lajos király tér 67.",
+    "9021 Győr, Arany János utca 67.",
     "7621 Pécs, Rákóczi út 67.",
-    "3530 Miskolc, Széchenyi István út 34.",
-    "8000 Székesfehérvár, Fő utca 18.",
-    "2800 Tatabánya, Millennium tér 5."
+    "3530 Miskolc, Széchenyi István út 67.",
+    "8000 Székesfehérvár, Fő utca 67.",
+    "2800 Tatabánya, Millennium tér 67."
   ];
 
   const houses = [
