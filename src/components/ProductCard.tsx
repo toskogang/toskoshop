@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Product } from '@/contexts/CartContext';
 import { ShoppingCart } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 interface ProductCardProps {
   product: Product;
@@ -10,15 +11,35 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
+  const displayImages = product.images || [product.image];
+  
   return (
     <Card className="flex flex-col h-full hover:shadow-lg transition-shadow">
       <CardHeader>
-        <div className="aspect-square bg-muted rounded-md mb-4 flex items-center justify-center">
-          <img
-            src={product.image}
-            alt={product.name}
-            className="w-full h-full object-cover rounded-md"
-          />
+        <div className="aspect-square bg-muted rounded-md mb-4 overflow-hidden">
+          {displayImages.length > 1 ? (
+            <Carousel className="w-full h-full">
+              <CarouselContent>
+                {displayImages.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <img
+                      src={image}
+                      alt={`${product.name} - ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
+          ) : (
+            <img
+              src={displayImages[0]}
+              alt={product.name}
+              className="w-full h-full object-cover rounded-md"
+            />
+          )}
         </div>
         <Badge className="w-fit mb-2">{product.category}</Badge>
         <CardTitle className="text-lg">{product.name}</CardTitle>

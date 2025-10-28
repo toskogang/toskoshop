@@ -8,7 +8,12 @@ export const products: Product[] = [
     price: 45000,
     description: 'Kiváló minőségű CAT6 UTP hálózati kábel, 305 méteres dobozban. Ideális irodai és otthoni hálózatok kiépítéséhez.',
     category: 'Hálózatépítés',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1558089687-7b4c1e4c6bb9?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1558089687-7b4c1e4c6bb9?w=800',
+      'https://images.unsplash.com/photo-1615799998603-7c6270a45196?w=800',
+      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800',
+    ],
   },
   {
     id: 2,
@@ -16,7 +21,12 @@ export const products: Product[] = [
     price: 28000,
     description: 'Professzionális 5-portos Gigabit router, dual-band Wi-Fi támogatással. Akár 1200 Mbps sebesség.',
     category: 'Hálózatépítés',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
+      'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800',
+      'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
+    ],
   },
   {
     id: 3,
@@ -24,7 +34,12 @@ export const products: Product[] = [
     price: 65000,
     description: 'Nagy sebességű fiber optikai kábel, 50 méter hosszúságban. Tökéletes adatközpontok közötti kapcsolathoz.',
     category: 'Hálózatépítés',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=800',
+      'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800',
+      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800',
+    ],
   },
   {
     id: 4,
@@ -32,7 +47,12 @@ export const products: Product[] = [
     price: 120000,
     description: '24-portos Power over Ethernet switch, Gigabit sebességgel. Ideális IP kamerák és telefonok táplálásához.',
     category: 'Hálózatépítés',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
+      'https://images.unsplash.com/photo-1588508065123-287b28e013da?w=800',
+      'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800',
+    ],
   },
   {
     id: 5,
@@ -40,7 +60,12 @@ export const products: Product[] = [
     price: 35000,
     description: '48-portos patch panel, CAT6 kompatibilis. Könnyű szerelés és professzionális megjelenés.',
     category: 'Hálózatépítés',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800',
+      'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
+      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
+    ],
   },
   // Kiberbiztonság termékek
   {
@@ -49,7 +74,12 @@ export const products: Product[] = [
     price: 250000,
     description: 'Vállalati szintű tűzfal berendezés, DPI és IPS funkciókkal. Védje hálózatát a modern fenyegetésektől.',
     category: 'Kiberbiztonság',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
+      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800',
+      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
+    ],
   },
   {
     id: 7,
@@ -57,7 +87,12 @@ export const products: Product[] = [
     price: 180000,
     description: 'Biztonságos VPN kapcsolatok kialakítása távoli irodák között. IPsec és SSL VPN támogatás.',
     category: 'Kiberbiztonság',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800',
+      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
+      'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800',
+    ],
   },
   {
     id: 8,
@@ -65,7 +100,12 @@ export const products: Product[] = [
     price: 95000,
     description: '8 kamerás IP megfigyelőrendszer, éjjellátó funkcióval és mozgásérzékeléssel. Cloud tárolás opció.',
     category: 'Kiberbiztonság',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800',
+      'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800',
+      'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=800',
+    ],
   },
   {
     id: 9,
@@ -73,7 +113,12 @@ export const products: Product[] = [
     price: 320000,
     description: 'IDS/IPS rendszer valós idejű hálózati forgalom elemzéssel. Automatikus veszélyforrás blokkolás.',
     category: 'Kiberbiztonság',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
+      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
+      'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
+    ],
   },
   {
     id: 10,
@@ -81,6 +126,11 @@ export const products: Product[] = [
     price: 210000,
     description: 'Hardware alapú hálózati titkosító modul. AES-256 titkosítás, törvényi megfelelőség támogatással.',
     category: 'Kiberbiztonság',
-    image: '/placeholder.svg',
+    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400',
+    images: [
+      'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800',
+      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
+      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
+    ],
   },
 ];
