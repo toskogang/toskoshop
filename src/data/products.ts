@@ -1,5 +1,17 @@
 import { Product } from '@/contexts/CartContext';
 
+// Import images
+import fiberOptic1 from '@/assets/fiber-optic-1.jpg';
+import fiberOptic2 from '@/assets/fiber-optic-2.png';
+import ciscoVpnRouter from '@/assets/cisco-vpn-router.webp';
+import ciscoVpnRouter2 from '@/assets/cisco-vpn-router-2.webp';
+import maintenance from '@/assets/maintenance.webp';
+import malwareDefender from '@/assets/malware-defender.jpg';
+import dataCompliance from '@/assets/data-compliance.jpg';
+import networkDesign from '@/assets/network-design.png';
+import networkUpgrade from '@/assets/network-upgrade.png';
+import networkExpansion from '@/assets/network-expansion.png';
+
 export const products: Product[] = [
   // Hálózatépítés termékek
   {
@@ -50,11 +62,11 @@ export const products: Product[] = [
     price: 65000,
     description: 'Nagy sebességű multimode optikai kábel LSZH burkolattal. Tökéletes adatközpontok közötti kapcsolathoz és nagy sávszélességű hálózatokhoz.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=400',
+    image: fiberOptic1,
     images: [
-      'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800',
-      'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800',
-      'https://images.unsplash.com/photo-1488229297570-58520851e868?w=800',
+      fiberOptic1,
+      fiberOptic2,
+      fiberOptic1,
     ],
     specifications: [
       'Típus: Multimode optikai kábel',
@@ -131,11 +143,11 @@ export const products: Product[] = [
     price: 180000,
     description: 'Biztonságos VPN kapcsolatok kialakítása távoli irodák között. IPsec és SSL VPN támogatás.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
+    image: ciscoVpnRouter,
     images: [
-      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
-      'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
-      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
+      ciscoVpnRouter,
+      ciscoVpnRouter2,
+      ciscoVpnRouter,
     ],
   },
   {
@@ -196,11 +208,11 @@ export const products: Product[] = [
     price: 150000,
     description: 'Havi rendszeres karbantartás és felügyelet. Biztonsági frissítések, teljesítmény optimalizálás és 24/7 támogatás.',
     category: 'Szolgáltatások',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400',
+    image: maintenance,
     images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800',
-      'https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800',
-      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800',
+      maintenance,
+      maintenance,
+      maintenance,
     ],
   },
   {
@@ -209,11 +221,11 @@ export const products: Product[] = [
     price: 95000,
     description: 'Professzionális malware elleni védelem ransomware védelemmel. Fejlett fenyegetés-felismerés és automatikus karantén.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=400',
+    image: malwareDefender,
     images: [
-      'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
-      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800',
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
+      malwareDefender,
+      malwareDefender,
+      malwareDefender,
     ],
   },
   {
@@ -235,11 +247,11 @@ export const products: Product[] = [
     price: 220000,
     description: 'GDPR megfelelőségi csomag auditálással és dokumentációval. Adatvédelmi tanácsadás, képzés és folyamatos felügyelet.',
     category: 'Szolgáltatások',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400',
+    image: dataCompliance,
     images: [
-      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800',
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
-      'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800',
+      dataCompliance,
+      dataCompliance,
+      dataCompliance,
     ],
   },
   {
@@ -248,11 +260,11 @@ export const products: Product[] = [
     price: 0,
     description: 'Teljes körű hálózat tervezés és kiépítés az alapoktól. Helyszíni felmérés, logikai és fizikai topológia tervezés, eszközök telepítése, kábelezés, konfigurálás és tesztelés. Professzionális megoldás új irodák, vállalkozások számára.',
     category: 'Szolgáltatások',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400',
+    image: networkDesign,
     images: [
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
-      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
-      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
+      networkDesign,
+      networkDesign,
+      networkDesign,
     ],
     specifications: [
       'Helyszíni felmérés és igényfelmérés',
@@ -271,11 +283,11 @@ export const products: Product[] = [
     price: 0,
     description: 'Meglévő hálózatok modernizálása, sebességnövelés, biztonsági korszerűsítés. Eszközök cseréje, kábelrendszer frissítése, új technológiák implementálása. Minimális állásidővel, üzletmenet-folytonosság biztosításával.',
     category: 'Szolgáltatások',
-    image: 'https://images.unsplash.com/photo-1593642532400-2682810df593?w=400',
+    image: networkUpgrade,
     images: [
-      'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
-      'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800',
-      'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
+      networkUpgrade,
+      networkUpgrade,
+      networkUpgrade,
     ],
     specifications: [
       'Jelenlegi hálózat auditálása és elemzése',
@@ -295,11 +307,11 @@ export const products: Product[] = [
     price: 0,
     description: 'Meglévő hálózatok kapacitásbővítése új munkaállomásokkal, telephelyekkel vagy funkciókkal. Zökkenőmentes integráció a jelenlegi infrastruktúrába, skálázhatóság biztosítása, teljesítmény optimalizálás.',
     category: 'Szolgáltatások',
-    image: 'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=400',
+    image: networkExpansion,
     images: [
-      'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
-      'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
-      'https://images.unsplash.com/photo-1588508065123-287b28e013da?w=800',
+      networkExpansion,
+      networkExpansion,
+      networkExpansion,
     ],
     specifications: [
       'Jelenlegi hálózat felmérése és kapacitáselemzés',
