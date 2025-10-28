@@ -22,13 +22,13 @@ const WhyChooseUs = () => {
 
   const addresses = [
     "1052 Budapest, Petőfi Sándor utca 67.",
-    "6720 Szeged, Kossuth Lajos sugárút 67.",
-    "4032 Debrecen, Nagy Lajos király tér 67.",
-    "9021 Győr, Arany János utca 67.",
-    "7621 Pécs, Rákóczi út 67.",
-    "3530 Miskolc, Széchenyi István út 67.",
-    "8000 Székesfehérvár, Fő utca 67.",
-    "2800 Tatabánya, Millennium tér 67."
+    "1134 Budapest, Váci út 67.",
+    "1075 Budapest, Rákóczi út 67.",
+    "2030 Érd, Budai út 67.",
+    "2100 Gödöllő, Szabadság tér 67.",
+    "2600 Vác, Március 15. tér 67.",
+    "2000 Szentendre, Fő tér 67.",
+    "2040 Budaörs, Szabadság út 67."
   ];
 
   const houses = [
