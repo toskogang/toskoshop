@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
           <div className="text-center mb-12 animate-fade-in">
             <Eye className="w-16 h-16 mx-auto mb-4 text-destructive animate-pulse" />
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-destructive">
-              Még se minket választaná?
+              Mégse minket választaná?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Itt van 5 érv, hogy miért MINKET válasszon:
