@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingCart, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/contexts/CartContext';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -45,19 +46,22 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => navigate('/cart')}
-            className="relative"
-          >
-            <ShoppingCart className="h-5 w-5" />
-            {getTotalItems() > 0 && (
-              <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full w-5 h-5 text-xs flex items-center justify-center">
-                {getTotalItems()}
-              </span>
-            )}
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => navigate('/cart')}
+              className="relative"
+            >
+              <ShoppingCart className="h-5 w-5" />
+              {getTotalItems() > 0 && (
+                <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full w-5 h-5 text-xs flex items-center justify-center">
+                  {getTotalItems()}
+                </span>
+              )}
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
