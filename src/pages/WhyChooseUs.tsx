@@ -70,10 +70,10 @@ const WhyChooseUs = () => {
               Miért válasszon minket?
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8">
-              Yip yap rólunk – A legmegbízhatóbb partner a hálózati biztonság terén
+              Professzionális hálózati megoldások és kiberbiztonsági védelem egy helyen
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              15 éve biztosítjuk ügyfeleink adatainak védelmét és hálózati infrastruktúrájának kiépítését.
+              3 éve biztosítjuk ügyfeleink adatainak védelmét és hálózati infrastruktúrájának kiépítését. Tapasztalt szakembereink segítenek a legmodernebb technológiákkal védeni vállalkozását a kiberfenyegetésektől, miközben stabil és biztonságos hálózati környezetet építünk ki az Ön számára.
             </p>
           </div>
         </div>
