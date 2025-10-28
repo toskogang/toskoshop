@@ -11,6 +11,16 @@ import dataCompliance from '@/assets/data-compliance.jpg';
 import networkDesign from '@/assets/network-design.png';
 import networkUpgrade from '@/assets/network-upgrade.png';
 import networkExpansion from '@/assets/network-expansion.png';
+import tpLinkWifi from '@/assets/tp-link-wifi.webp';
+import tpLinkWifi2 from '@/assets/tp-link-wifi-2.jpg';
+import switchImg from '@/assets/switch.webp';
+import switchImg2 from '@/assets/switch-2.webp';
+import unifiRouter from '@/assets/unifi-router.webp';
+import unifiRouter2 from '@/assets/unifi-router-2.png';
+import securityCam from '@/assets/security-cam.jpg';
+import securityCam2 from '@/assets/security-cam-2.jpg';
+import networkEncryption from '@/assets/network-encryption.png';
+import securityAudit from '@/assets/security-audit.jpg';
 
 export const products: Product[] = [
   // Hálózatépítés termékek
@@ -40,11 +50,10 @@ export const products: Product[] = [
     price: 29352,
     description: 'TP-Link Deco E4 AC1200 Whole Home Mesh Wi-Fi System. Professzionális mesh hálózati megoldás teljes otthoni lefedettséggel.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
+    image: tpLinkWifi,
     images: [
-      'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=800',
-      'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
-      'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800',
+      tpLinkWifi,
+      tpLinkWifi2,
     ],
     specifications: [
       'Dual-band Wi-Fi (2.4 GHz és 5 GHz)',
@@ -66,7 +75,6 @@ export const products: Product[] = [
     images: [
       fiberOptic1,
       fiberOptic2,
-      fiberOptic1,
     ],
     specifications: [
       'Típus: Multimode optikai kábel',
@@ -82,11 +90,10 @@ export const products: Product[] = [
     price: 20290,
     description: '5-portos 2.5G Unmanaged Switch fém házzal. Ideális nagy sebességű hálózati kapcsolatokhoz, plug-and-play telepítéssel.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400',
+    image: switchImg,
     images: [
-      'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
-      'https://images.unsplash.com/photo-1588508065123-287b28e013da?w=800',
-      'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800',
+      switchImg,
+      switchImg2,
     ],
     specifications: [
       '5 x 2.5G Ethernet RJ45 port',
@@ -104,11 +111,10 @@ export const products: Product[] = [
     price: 154290,
     description: 'Professzionális all-in-one hálózati megoldás rack-mountable formában. Quad-core processzorral és 10G portokkal felszerelve.',
     category: 'Hálózatépítés',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400',
+    image: unifiRouter,
     images: [
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
-      'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
-      'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
+      unifiRouter,
+      unifiRouter2,
     ],
     specifications: [
       '4 x 10/100/1000 Mbps RJ45 LAN port',
@@ -147,7 +153,6 @@ export const products: Product[] = [
     images: [
       ciscoVpnRouter,
       ciscoVpnRouter2,
-      ciscoVpnRouter,
     ],
   },
   {
@@ -156,11 +161,10 @@ export const products: Product[] = [
     price: 95000,
     description: '8 kamerás IP megfigyelőrendszer, éjjellátó funkcióval és mozgásérzékeléssel. Cloud tárolás opció.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400',
+    image: securityCam,
     images: [
-      'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800',
-      'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800',
-      'https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=800',
+      securityCam,
+      securityCam2,
     ],
   },
   {
@@ -182,11 +186,9 @@ export const products: Product[] = [
     price: 210000,
     description: 'Hardware alapú hálózati titkosító modul. AES-256 titkosítás, törvényi megfelelőség támogatással.',
     category: 'Kiberbiztonság',
-    image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=400',
+    image: networkEncryption,
     images: [
-      'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800',
-      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
-      'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800',
+      networkEncryption,
     ],
   },
   {
@@ -198,8 +200,6 @@ export const products: Product[] = [
     image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400',
     images: [
       'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800',
-      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800',
-      'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800',
     ],
   },
   {
@@ -210,8 +210,6 @@ export const products: Product[] = [
     category: 'Szolgáltatások',
     image: maintenance,
     images: [
-      maintenance,
-      maintenance,
       maintenance,
     ],
   },
@@ -224,8 +222,6 @@ export const products: Product[] = [
     image: malwareDefender,
     images: [
       malwareDefender,
-      malwareDefender,
-      malwareDefender,
     ],
   },
   {
@@ -234,11 +230,9 @@ export const products: Product[] = [
     price: 180000,
     description: 'Átfogó biztonsági audit penetrációs tesztekkel. Sebezhetőség elemzés, kockázatértékelés és részletes jelentés.',
     category: 'Szolgáltatások',
-    image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400',
+    image: securityAudit,
     images: [
-      'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',
-      'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800',
+      securityAudit,
     ],
   },
   {
@@ -250,8 +244,6 @@ export const products: Product[] = [
     image: dataCompliance,
     images: [
       dataCompliance,
-      dataCompliance,
-      dataCompliance,
     ],
   },
   {
@@ -262,8 +254,6 @@ export const products: Product[] = [
     category: 'Szolgáltatások',
     image: networkDesign,
     images: [
-      networkDesign,
-      networkDesign,
       networkDesign,
     ],
     specifications: [
@@ -286,8 +276,6 @@ export const products: Product[] = [
     image: networkUpgrade,
     images: [
       networkUpgrade,
-      networkUpgrade,
-      networkUpgrade,
     ],
     specifications: [
       'Jelenlegi hálózat auditálása és elemzése',
@@ -309,8 +297,6 @@ export const products: Product[] = [
     category: 'Szolgáltatások',
     image: networkExpansion,
     images: [
-      networkExpansion,
-      networkExpansion,
       networkExpansion,
     ],
     specifications: [
