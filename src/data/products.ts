@@ -19,7 +19,6 @@ export const products: Product[] = [
       'Típus: U/UTP',
       'Burkolat: PVC',
       'Sebesség: 1Gbit/s',
-      'Méterár: 202 Ft/m',
       'Doboz méret: 305m'
     ],
   },
@@ -62,8 +61,7 @@ export const products: Product[] = [
       'OM-osztály: OM4',
       'Duplex: két szál párhuzamosan',
       'Csatlakozók: LC csatlakozó',
-      'Burkolat: LSZH',
-      'Méterár: 350 Ft/m'
+      'Burkolat: LSZH'
     ],
   },
   {
