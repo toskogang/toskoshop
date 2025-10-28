@@ -27,6 +27,69 @@ const About = () => {
           </section>
 
           <section>
+            <h2 className="text-2xl font-semibold mb-4">Csapatunk</h2>
+            <div className="space-y-6">
+              <div className="p-6 border rounded-lg bg-card">
+                <h3 className="font-bold text-xl mb-2">Szudor Tamás</h3>
+                <p className="text-sm text-muted-foreground italic mb-3">Hálózati szakember</p>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Én Szudor Tamás vagyok, hálózati szakember. Célom, hogy minden ügyfelem számára 
+                  megbízható, stabil és biztonságos hálózatot alakítsak ki, amely hosszú távon is 
+                  hatékonyan működik.
+                </p>
+                <div className="mb-3">
+                  <h4 className="font-semibold mb-2">Előismereteim:</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Linux, Windows Server, Visual Studio, HTML, CSS, Python, valamint CISCO hálózati ismeretek.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Szolgáltatásaim:</h4>
+                  <p className="text-sm text-muted-foreground mb-2 font-medium">Hálózat tervezése, kiépítése és üzemeltetése:</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Első lépésként személyesen felmérem a helyszínt, hogy pontos képet kapjak az igényekről 
+                    és a lehetőségekről. Ezt követően elkészítem a logikai és fizikai topológiát, amely alapján 
+                    a hálózat kialakítása történik. Minden eszközt szakszerűen telepítek és konfigurálok, 
+                    a kábeleket pedig esztétikusan, diszkréten vezetem el. A beüzemelés után gondoskodom 
+                    a biztonsági beállításokról és a rendszer alapos teszteléséről, hogy a hálózat hibátlanul 
+                    és hatékonyan működjön. Törekszem arra, hogy minden ügyfél elégedett legyen, és a létrehozott 
+                    hálózat hosszú távon is megfeleljen a modern technikai elvárásoknak.
+                  </p>
+                </div>
+              </div>
+
+              <div className="p-6 border rounded-lg bg-card">
+                <h3 className="font-bold text-xl mb-2">Czimbó Gergő</h3>
+                <p className="text-sm text-muted-foreground italic mb-3">Hálózati szakember</p>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Én Czimbó Gergő vagyok hálózati szakember. Arra törekszem, hogy akik felkeresnek, 
+                  azoknak egy működő hálózatot hozzak létre.
+                </p>
+                <div className="mb-3">
+                  <h4 className="font-semibold mb-2">Előismereteim:</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Linux, Windows Server, Visual Studio, HTML, CSS, Python, CISCO tanfolyam.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Szolgáltatásaim:</h4>
+                  <p className="text-sm text-muted-foreground mb-2 font-medium">Hálózat tervezése és üzemeltetése:</p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Első lépésként kimegyek a céghez felmérni a terepet. Hálózat létrehozásának második 
+                    lépése a logikai topológia, ezt nagyon szívesen összeállítom önnek és segítek megtervezni 
+                    a hálózat elhelyezkedését. Törekszem arra, hogy minden a legnagyobb rendben legyen 
+                    a hálózatban és minden hatékonyan hibátlanul működjön. Ezután minden eszközt elhelyezek 
+                    a területen belül a topológia szerint majd ezeket be is üzemelem, kábelekkel összekötöm, 
+                    ezeket a kábeleket megpróbálom diszkrét módon elvezetni, összekötni. A hálózatban 
+                    szükség lesz az eszközök konfigurációjára így a következő lépésként ezt fogom elvégezni. 
+                    Legvégül pedig a biztonsági beállításokat, illetve a tesztelést fogom elvégezni.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
             <h2 className="text-2xl font-semibold mb-4">Mit kínálunk?</h2>
             <div className="space-y-3">
               <div className="p-4 border rounded-lg">
