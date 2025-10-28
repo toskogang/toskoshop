@@ -43,6 +43,11 @@ const Footer = () => {
                   Vélemények
                 </Link>
               </li>
+              <li>
+                <Link to="/privacy" className="hover:text-foreground transition-colors">
+                  Adatvédelem
+                </Link>
+              </li>
             </ul>
           </div>
 
