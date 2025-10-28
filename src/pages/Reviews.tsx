@@ -1,6 +1,12 @@
+import { useState } from 'react';
 import { Star } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { toast } from 'sonner';
 
 interface Review {
   id: number;
@@ -85,6 +91,13 @@ const reviews: Review[] = [
 ];
 
 const Reviews = () => {
+  const [allReviews, setAllReviews] = useState<Review[]>(reviews);
+  const [newReview, setNewReview] = useState({
+    name: '',
+    rating: 0,
+    comment: '',
+  });
+
   const renderStars = (rating: number) => {
     return (
       <div className="flex gap-1">
@@ -102,6 +115,60 @@ const Reviews = () => {
     );
   };
 
+  const renderInteractiveStars = (currentRating: number, onRate: (rating: number) => void) => {
+    return (
+      <div className="flex gap-1">
+        {[1, 2, 3, 4, 5].map((star) => (
+          <button
+            key={star}
+            type="button"
+            onClick={() => onRate(star)}
+            className="transition-transform hover:scale-110"
+          >
+            <Star
+              className={`h-6 w-6 ${
+                star <= currentRating
+                  ? 'fill-yellow-400 text-yellow-400'
+                  : 'text-muted-foreground hover:text-yellow-300'
+              }`}
+            />
+          </button>
+        ))}
+      </div>
+    );
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!newReview.name.trim()) {
+      toast.error('Kérjük, adja meg a nevét!');
+      return;
+    }
+    
+    if (newReview.rating < 4) {
+      toast.error('Csak 4 vagy 5 csillagos értékeléseket fogadunk el!');
+      return;
+    }
+    
+    if (!newReview.comment.trim()) {
+      toast.error('Kérjük, írjon véleményt!');
+      return;
+    }
+
+    const review: Review = {
+      id: allReviews.length + 1,
+      name: newReview.name,
+      rating: newReview.rating,
+      date: new Date().toLocaleDateString('hu-HU', { year: 'numeric', month: 'long', day: 'numeric' }).replace(/ /g, '. '),
+      comment: newReview.comment,
+    };
+
+    setAllReviews([review, ...allReviews]);
+    setNewReview({ name: '', rating: 0, comment: '' });
+    toast.success('Köszönjük a véleményét!');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-12">
@@ -111,8 +178,51 @@ const Reviews = () => {
             Olvassa el ügyfeleink véleményét termékeinkről és szolgáltatásainkról.
           </p>
 
+          <Card className="mb-8">
+            <CardHeader>
+              <h2 className="text-2xl font-bold">Írjon véleményt</h2>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Név</Label>
+                  <Input
+                    id="name"
+                    value={newReview.name}
+                    onChange={(e) => setNewReview({ ...newReview, name: e.target.value })}
+                    placeholder="Az Ön neve"
+                    maxLength={100}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label>Értékelés (min. 4 csillag)</Label>
+                  {renderInteractiveStars(newReview.rating, (rating) => 
+                    setNewReview({ ...newReview, rating })
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="comment">Vélemény</Label>
+                  <Textarea
+                    id="comment"
+                    value={newReview.comment}
+                    onChange={(e) => setNewReview({ ...newReview, comment: e.target.value })}
+                    placeholder="Ossza meg velünk véleményét..."
+                    className="min-h-[100px]"
+                    maxLength={500}
+                  />
+                </div>
+
+                <Button type="submit" className="w-full">
+                  Vélemény elküldése
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+
           <div className="space-y-6">
-            {reviews.map((review) => (
+            {allReviews.map((review) => (
               <Card key={review.id}>
                 <CardHeader>
                   <div className="flex items-start gap-4">
