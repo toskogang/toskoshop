@@ -6,7 +6,7 @@ export const products: Product[] = [
     id: 1,
     name: 'CAT6 UTP Kábel - 305m',
     price: 45000,
-    description: 'Kiváló minőségű CAT6 UTP hálózati kábel, 305 méteres dobozban. Ideális irodai és otthoni hálózatok kiépítéséhez.',
+    description: 'Kiváló minőségű CAT6 UTP hálózati kábel, 305 méteres dobozban. Ideális irodai és otthoni hálózatok kiépítéséhez. Digitus Cat6 U/UTP patch kábel egyenes kötésű és cross-over változatban.',
     category: 'Hálózatépítés',
     image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
     images: [
@@ -14,12 +14,20 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
       'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=800',
     ],
+    specifications: [
+      'Kategória: Cat6',
+      'Típus: U/UTP',
+      'Burkolat: PVC',
+      'Sebesség: 1Gbit/s',
+      'Méterár: 202 Ft/m',
+      'Doboz méret: 305m'
+    ],
   },
   {
     id: 2,
-    name: 'Gigabit Router TP-Link',
-    price: 28000,
-    description: 'Professzionális 5-portos Gigabit router, dual-band Wi-Fi támogatással. Akár 1200 Mbps sebesség.',
+    name: 'TP-Link Deco E4 Mesh Wi-Fi',
+    price: 29352,
+    description: 'TP-Link Deco E4 AC1200 Whole Home Mesh Wi-Fi System. Professzionális mesh hálózati megoldás teljes otthoni lefedettséggel.',
     category: 'Hálózatépítés',
     image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?w=400',
     images: [
@@ -27,12 +35,21 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1593642532400-2682810df593?w=800',
       'https://images.unsplash.com/photo-1614624532983-4ce03382d63d?w=800',
     ],
+    specifications: [
+      'Dual-band Wi-Fi (2.4 GHz és 5 GHz)',
+      'Maximum 1167 Mbps sebesség',
+      'Mesh technológia',
+      'Akár 400 m² lefedettség (3 csomagos készlet)',
+      'Automatikus eszközkezelés és zökkenőmentes roaming',
+      'TP-Link Deco alkalmazás a beállításhoz',
+      'Szülői felügyelet és biztonsági funkciók'
+    ],
   },
   {
     id: 3,
-    name: 'Fiber Optikai Kábel 50m',
+    name: 'ACT LSZH Multimode Optikai Kábel',
     price: 65000,
-    description: 'Nagy sebességű fiber optikai kábel, 50 méter hosszúságban. Tökéletes adatközpontok közötti kapcsolathoz.',
+    description: 'Nagy sebességű multimode optikai kábel LSZH burkolattal. Tökéletes adatközpontok közötti kapcsolathoz és nagy sávszélességű hálózatokhoz.',
     category: 'Hálózatépítés',
     image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=400',
     images: [
@@ -40,12 +57,20 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800',
       'https://images.unsplash.com/photo-1488229297570-58520851e868?w=800',
     ],
+    specifications: [
+      'Típus: Multimode optikai kábel',
+      'OM-osztály: OM4',
+      'Duplex: két szál párhuzamosan',
+      'Csatlakozók: LC csatlakozó',
+      'Burkolat: LSZH',
+      'Méterár: 350 Ft/m'
+    ],
   },
   {
     id: 4,
-    name: 'PoE Switch 24-port',
-    price: 120000,
-    description: '24-portos Power over Ethernet switch, Gigabit sebességgel. Ideális IP kamerák és telefonok táplálásához.',
+    name: 'Cudy 5-port 2.5G Switch HS105',
+    price: 20290,
+    description: '5-portos 2.5G Unmanaged Switch fém házzal. Ideális nagy sebességű hálózati kapcsolatokhoz, plug-and-play telepítéssel.',
     category: 'Hálózatépítés',
     image: 'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400',
     images: [
@@ -53,18 +78,39 @@ export const products: Product[] = [
       'https://images.unsplash.com/photo-1588508065123-287b28e013da?w=800',
       'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=800',
     ],
+    specifications: [
+      '5 x 2.5G Ethernet RJ45 port',
+      'Fém ház',
+      'Loop Detection és Prevention támogatás',
+      'IGMP Snooping',
+      '802.3az Energy Efficient Ethernet',
+      'Plug-and-play telepítés',
+      'Asztali és falra szerelhető kialakítás'
+    ],
   },
   {
     id: 5,
-    name: 'Hálózati Patch Panel 48-port',
-    price: 35000,
-    description: '48-portos patch panel, CAT6 kompatibilis. Könnyű szerelés és professzionális megjelenés.',
+    name: 'Ubiquiti UniFi Dream Machine Pro',
+    price: 154290,
+    description: 'Professzionális all-in-one hálózati megoldás rack-mountable formában. Quad-core processzorral és 10G portokkal felszerelve.',
     category: 'Hálózatépítés',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400',
     images: [
       'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800',
       'https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=800',
       'https://images.unsplash.com/photo-1545259742-12f9b0a8b01e?w=800',
+    ],
+    specifications: [
+      '4 x 10/100/1000 Mbps RJ45 LAN port',
+      '1 x 10G SFP+ WAN port',
+      '1 x 10G SFP+ LAN port',
+      '1 x 10/100/1000 Mbps RJ45 WAN port',
+      'Quad-core ARM Cortex-A57 processzor (1.7 GHz)',
+      '4 GB DDR4 RAM',
+      '16 GB eMMC tároló',
+      'Maximum 3.5 Gbps IPS áteresztési sebesség',
+      'Rack-mountable 1U formátum',
+      'UniFi OS Console integráció'
     ],
   },
   // Kiberbiztonság termékek

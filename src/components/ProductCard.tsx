@@ -2,8 +2,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Product } from '@/contexts/CartContext';
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Eye } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { useNavigate } from 'react-router-dom';
 
 interface ProductCardProps {
   product: Product;
@@ -11,6 +12,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
+  const navigate = useNavigate();
   const displayImages = product.images || [product.image];
   
   return (
@@ -52,9 +54,17 @@ const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
           {product.price.toLocaleString('hu-HU')} Ft
         </p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="flex gap-2">
         <Button
-          className="w-full"
+          variant="outline"
+          className="flex-1"
+          onClick={() => navigate(`/products/${product.id}`)}
+        >
+          <Eye className="mr-2 h-4 w-4" />
+          Részletek
+        </Button>
+        <Button
+          className="flex-1"
           onClick={() => onAddToCart(product)}
         >
           <ShoppingCart className="mr-2 h-4 w-4" />
