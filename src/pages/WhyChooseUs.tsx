@@ -7,6 +7,7 @@ const WhyChooseUs = () => {
   const [randomName, setRandomName] = useState<string>("");
   const [randomHouse, setRandomHouse] = useState<string>("");
   const [randomWebcam, setRandomWebcam] = useState<string>("");
+  const [randomAddress, setRandomAddress] = useState<string>("");
 
   const names = [
     "Kovács János",
@@ -17,6 +18,17 @@ const WhyChooseUs = () => {
     "Kiss Eszter",
     "Molnár Gábor",
     "Horváth Katalin"
+  ];
+
+  const addresses = [
+    "1052 Budapest, Petőfi Sándor utca 12.",
+    "6720 Szeged, Kossuth Lajos sugárút 45.",
+    "4032 Debrecen, Nagy Lajos király tér 8.",
+    "9021 Győr, Arany János utca 23.",
+    "7621 Pécs, Rákóczi út 67.",
+    "3530 Miskolc, Széchenyi István út 34.",
+    "8000 Székesfehérvár, Fő utca 18.",
+    "2800 Tatabánya, Millennium tér 5."
   ];
 
   const houses = [
@@ -43,6 +55,7 @@ const WhyChooseUs = () => {
     setRandomName(names[Math.floor(Math.random() * names.length)]);
     setRandomHouse(houses[Math.floor(Math.random() * houses.length)]);
     setRandomWebcam(webcams[Math.floor(Math.random() * webcams.length)]);
+    setRandomAddress(addresses[Math.floor(Math.random() * addresses.length)]);
   }, []);
 
   return (
@@ -113,7 +126,7 @@ const WhyChooseUs = () => {
                     Az Ön lakcíme
                   </h3>
                   <p className="text-2xl md:text-3xl font-semibold text-destructive">
-                    1234 Budapest, Példa utca 56.
+                    {randomAddress || "Betöltés..."}
                   </p>
                   <p className="text-sm text-muted-foreground mt-2">
                     Szép a környék, nem? 😊
