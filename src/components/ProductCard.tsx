@@ -18,16 +18,16 @@ const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
   return (
     <Card className="flex flex-col h-full hover:shadow-lg transition-shadow">
       <CardHeader>
-        <div className="aspect-square bg-muted rounded-md mb-4 overflow-hidden">
+        <div className="aspect-square bg-muted rounded-md mb-4 overflow-hidden flex items-center justify-center">
           {displayImages.length > 1 ? (
             <Carousel className="w-full h-full">
               <CarouselContent>
                 {displayImages.map((image, index) => (
-                  <CarouselItem key={index}>
+                  <CarouselItem key={index} className="flex items-center justify-center">
                     <img
                       src={image}
                       alt={`${product.name} - ${index + 1}`}
-                      className="w-full h-full object-cover object-center"
+                      className="w-full h-full object-contain"
                     />
                   </CarouselItem>
                 ))}
@@ -39,7 +39,7 @@ const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
             <img
               src={displayImages[0]}
               alt={product.name}
-              className="w-full h-full object-cover object-center rounded-md"
+              className="w-full h-full object-contain rounded-md"
             />
           )}
         </div>

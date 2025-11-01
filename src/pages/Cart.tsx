@@ -43,11 +43,11 @@ const Cart = () => {
               <Card key={item.id}>
                 <CardContent className="p-4 md:p-6">
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="w-full sm:w-24 h-32 sm:h-24 bg-muted rounded-md flex-shrink-0">
+                    <div className="w-full sm:w-24 h-32 sm:h-24 bg-muted rounded-md flex-shrink-0 flex items-center justify-center">
                       <img
                         src={item.image}
                         alt={item.name}
-                        className="w-full h-full object-cover object-center rounded-md"
+                        className="w-full h-full object-contain rounded-md"
                       />
                     </div>
                     

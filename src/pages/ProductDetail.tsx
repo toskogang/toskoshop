@@ -56,11 +56,11 @@ const ProductDetail = () => {
                   <CarouselContent>
                     {displayImages.map((image, index) => (
                       <CarouselItem key={index}>
-                        <div className="aspect-square bg-muted rounded-lg overflow-hidden">
+                        <div className="aspect-square bg-muted rounded-lg overflow-hidden flex items-center justify-center">
                           <img
                             src={image}
                             alt={`${product.name} - ${index + 1}`}
-                            className="w-full h-full object-cover object-center"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                       </CarouselItem>
