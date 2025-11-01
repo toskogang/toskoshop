@@ -47,7 +47,7 @@ const Cart = () => {
                       <img
                         src={item.image}
                         alt={item.name}
-                        className="w-full h-full object-contain rounded-md"
+                        className="w-full h-full object-cover object-center rounded-md"
                       />
                     </div>
                     
