@@ -27,7 +27,7 @@ const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
                     <img
                       src={image}
                       alt={`${product.name} - ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </CarouselItem>
                 ))}
@@ -39,7 +39,7 @@ const ProductCard = ({ product, onAddToCart }: ProductCardProps) => {
             <img
               src={displayImages[0]}
               alt={product.name}
-              className="w-full h-full object-cover rounded-md"
+              className="w-full h-full object-cover object-center rounded-md"
             />
           )}
         </div>
